@@ -1,0 +1,14 @@
+prefix=/x/third/output/ffmpeg-x64-cube_stage
+exec_prefix=${prefix}
+libdir=/x/third/output/ffmpeg-x64-cube_stage/lib
+includedir=/x/third/output/ffmpeg-x64-cube_stage/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 57.8.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil user32.lib bcrypt.lib
+Libs.private: 
+Cflags: -I${includedir}

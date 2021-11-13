@@ -1,0 +1,14 @@
+prefix=/x/third/output/ffmpeg-x64-cube_stage
+exec_prefix=${prefix}
+libdir=/x/third/output/ffmpeg-x64-cube_stage/lib
+includedir=/x/third/output/ffmpeg-x64-cube_stage/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 4.0.100
+Requires: libavutil >= 57.8.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: 
+Cflags: -I${includedir}

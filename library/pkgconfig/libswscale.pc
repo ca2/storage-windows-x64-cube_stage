@@ -1,0 +1,14 @@
+prefix=/x/third/output/ffmpeg-x64-cube_stage
+exec_prefix=${prefix}
+libdir=/x/third/output/ffmpeg-x64-cube_stage/lib
+includedir=/x/third/output/ffmpeg-x64-cube_stage/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 6.1.100
+Requires: libavutil >= 57.8.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: 
+Cflags: -I${includedir}
